@@ -39,12 +39,10 @@ ehthumbs.db
 .env.local
 .env.*.local
 
-# Log files and runtime traces
+# Log files
 *.log
 
-# Package managers and builds
-pip-lock.txt
-poetry.lock
+# Build and test artifacts
 htmlcov/
 docs/_build/
 
@@ -57,12 +55,12 @@ docs/_build/
 # Database files
 *.db
 
-# Datasets (local preprocessed data and raw annotations)
+# Local datasets and annotations
 datasets/
 data/
 *.ndjson
 
-# Model checkpoints and weights (stored locally; see GitHub Releases)
+# Model checkpoints and weights
 checkpoints/
 checkpoints_data/
 *.pth
@@ -70,15 +68,17 @@ checkpoints_data/
 *.ckpt
 *.pth.tar
 
-# Large archives and compressed distributions
+# Large archives
 *.tar.gz
 *.tar
 *.zip
 
-# Experiment outputs and temporary directories
-experiments/*
+# Experiment-generated outputs (preserve scripts)
+experiments/*/outputs/
+experiments/*/results/
+experiments/*/logs/
 tmp/
 temp/
 
-# Nested accidental repository clone from GitHub Desktop setup
+# Accidental nested repository
 Social-Transmotion-Research/
