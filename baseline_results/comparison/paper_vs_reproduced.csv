@@ -1,0 +1,9 @@
+Dataset,Modality,Paper ADE (Rounded),Paper FDE (Rounded),Reproduced ADE (Raw),Reproduced FDE (Raw),Raw Delta ADE,Raw Delta FDE,Assessment
+JTA,Trajectory Only,0.99,1.98,0.9862,1.9891,-0.0038,+0.0091,Close quantitative reproduction (rounds to 0.99 / 1.99)
+JTA,T + 2D BB,0.96,1.91,0.9571,1.9188,-0.0029,+0.0088,Close quantitative reproduction (rounds to 0.96 / 1.92)
+JTA,T + 2D Pose,0.95,1.91,0.9511,1.9166,+0.0011,+0.0066,Close quantitative reproduction (rounds to 0.95 / 1.92)
+JTA,T + 3D Pose,0.89,1.81,0.8874,1.8101,-0.0026,+0.0001,Close quantitative reproduction (rounds to 0.89 / 1.81)
+JTA,T + 3D Pose + 3D BB,0.89,1.81,0.8891,1.8144,-0.0009,+0.0044,Close quantitative reproduction (rounds to 0.89 / 1.81)
+JTA,All Modalities,0.88,1.80,0.8825,1.7957,+0.0025,-0.0043,Close quantitative reproduction (rounds to 0.88 / 1.80)
+JRDB,Trajectory Only,0.40,0.77,0.3972,0.7735,-0.0028,+0.0035,Close quantitative reproduction (rounds to 0.40 / 0.77)
+JRDB,T + 2D BB,0.37,0.73,0.3712,0.7279,+0.0012,-0.0021,Close quantitative reproduction (rounds to 0.37 / 0.73)

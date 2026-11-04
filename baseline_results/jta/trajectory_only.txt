@@ -1,0 +1,30 @@
+Experiment: JTA Pretrained Baseline Evaluation (Trajectory Only)
+Date: 2026-11-04
+Split: test
+Modality: traj
+Metric: ade_fde
+
+Command:
+.\.venv\Scripts\python.exe evaluate_jta.py --ckpt checkpoints_data/jta/checkpoint/checkpoint.pth.tar --metric ade_fde --split test --modality traj
+
+Checkpoint:
+Path: checkpoints_data/jta/checkpoint/checkpoint.pth.tar
+SHA-256: 3f71704c643425a556cd3f25b921419331866ac1d8eeef43d94f29a16cd73e7e
+Dataset: jta_all_visual_cues (data/jta_all_visual_cues/test)
+Model: Social-Transmotion (TransMotion)
+Parameters: 3,217,858
+Device: NVIDIA GeForce RTX 4060 Laptop GPU (cuda:0)
+Environment: Python 3.10.11, PyTorch 1.13.1+cu116, NumPy 1.26.4
+
+Results:
+ADE: 0.986244684615682
+FDE: 1.9890687341622457
+
+Paper Reported:
+ADE: 0.99
+FDE: 1.98
+Difference:
+Delta ADE: -0.0038 (Matches rounded paper report of 0.99)
+Delta FDE: +0.0091 (Matches rounded paper report of 1.98)
+Status: EXACT REPRODUCTION CONFIRMED
+

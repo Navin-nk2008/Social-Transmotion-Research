@@ -1,0 +1,84 @@
+# ==============================================================================
+# Social-Transmotion Research - .gitignore
+# ==============================================================================
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.cache
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+
+# Log files and runtime traces
+*.log
+
+# Package managers and builds
+pip-lock.txt
+poetry.lock
+htmlcov/
+docs/_build/
+
+# Compiled native binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Database files
+*.db
+
+# Datasets (local preprocessed data and raw annotations)
+datasets/
+data/
+*.ndjson
+
+# Model checkpoints and weights (stored locally; see GitHub Releases)
+checkpoints/
+checkpoints_data/
+*.pth
+*.pt
+*.ckpt
+*.pth.tar
+
+# Large archives and compressed distributions
+*.tar.gz
+*.tar
+*.zip
+
+# Experiment outputs and temporary directories
+experiments/*
+tmp/
+temp/
+
+# Nested accidental repository clone from GitHub Desktop setup
+Social-Transmotion-Research/
